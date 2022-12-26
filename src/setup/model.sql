@@ -12,6 +12,8 @@ create table categories(
     category_name text not null unique
 );
 
+insert into categories(category_name) values ('Birinchi'), ('Ikkinchi'), ('Uygur Taomlari'), ('Yevropa Taomlari'), ('Kaboblar'), ('Salatlar');
+
 create table news(
     news_id uuid default uuid_generate_v4(),
     news_img text not null,
